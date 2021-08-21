@@ -1,13 +1,13 @@
 <template>
-<main>
+<main class="flex-grow">
   <section class="mb-8 py-20 text-center relative">
     <div
       class="absolute inset-0 w-full h-full" id="manage-header">
     </div>
   </section>
-  <section class="container mx-auto mt-6">
+  <section class="container mx-auto mt-6 px-5">
     <div class="md:grid md:grid-cols-3 md:gap-4">
-      <div class="col-span-1">
+      <div class="col-span-1 mb-6">
         <AppUpload ref="upload" :addSong="addSong" />
       </div>
       <div class="col-span-2">

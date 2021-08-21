@@ -1,6 +1,6 @@
 <template>
   <!-- Player -->
-  <div class="fixed bottom-0 left-0 bg-white p-5 pb-5 text-left align-top w-full h-16">
+  <div class="fixed bottom-0 left-0 inset-x-0 bg-white p-5 pb-5 text-left align-top w-full h-16">
     <div class="relative">
       <!-- Play/Pause Button -->
       <div class="float-left w-7 h-7 leading-3">

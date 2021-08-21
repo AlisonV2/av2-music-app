@@ -5,21 +5,21 @@
     <div
       class="absolute inset-0 w-full h-full" id="song-header">
     </div>
-      <div class="container mx-auto flex items-center">
+      <div class="container mx-auto flex items-center px-5">
         <!-- Play/Pause Button -->
-        <button type="button" class="z-50 h-24 w-24 text-3xl bg-white text-black rounded-full
+        <button type="button" class="h-16 w-16 md:h-20 md:w-20 text-2xl md:text-3xl bg-white text-black rounded-full
           focus:outline-none" @click.prevent="newSong(song)">
           <i class="fa" :class="{ 'fa-play': !playing, 'fa-pause': playing }"></i>
         </button>
         <div class="z-50 text-left ml-8">
           <!-- Song Info -->
-          <div class="text-3xl font-bold">{{ song.modified_name }}</div>
+          <h2 class="font-bold">{{ song.modified_name }}</h2>
           <div>{{ song.genre }}</div>
         </div>
       </div>
     </section>
     <!-- Form -->
-    <section class="container mx-auto mt-6" id="comments">
+    <section class="container mx-auto mt-6 px-5" id="comments">
       <div class="bg-white rounded border border-gray-200 relative flex flex-col">
         <div class="px-6 pt-6 pb-5 font-bold border-b border-gray-200">
           <!-- Comment Count -->
@@ -54,8 +54,8 @@
       </div>
     </section>
     <!-- Comments -->
-    <ul class="container mx-auto">
-      <li class="p-6 bg-gray-50 border border-gray-200" v-for="comment in sortedComments"
+    <ul class="container mx-auto px-5 mt-5">
+      <li class="p-6 bg-gray-50 rounded border border-gray-200" v-for="comment in sortedComments"
         :key="comment.docID">
         <!-- Comment Author -->
         <div class="mb-5">
