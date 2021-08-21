@@ -16,8 +16,6 @@ The user can add, edit or remove songs once he registered.
 - Vuex
 - Vue Router with Route Guards
 - Firebase SDK: Authentication, Firestore, Storage
-- i18n
-- Composition API
 - Vee-validate
 - Howler.js
 - Tailwind CSS
