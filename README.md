@@ -1,7 +1,8 @@
 # Music App - Vue.js & Firebase
 
 Music Player with a user interface.
-The user can add, edit or remove songs once he registered.
+The user can add, rename or remove songs once he registered.
+Only users can comment.
 ## Features
 
 - Music player
@@ -13,6 +14,7 @@ The user can add, edit or remove songs once he registered.
 - Unit tests, Snapshot tests && End-to-End test
 ## Tech
 
+- Vue UI & Vue CLI
 - Vuex
 - Vue Router with Route Guards
 - Firebase SDK: Authentication, Firestore, Storage
@@ -20,8 +22,8 @@ The user can add, edit or remove songs once he registered.
 - Howler.js
 - Tailwind CSS
 - PWA
-- WorkBox
 - Jest
+- Cypress
 - Vercel CLI
 ### Project setup
 ```
