@@ -6,6 +6,7 @@ import VeeValidatePlugin from './includes/validation';
 import { auth } from './includes/firebase';
 import './assets/tailwind.css';
 import './assets/main.css';
+import './registerServiceWorker'
 
 let app;
 

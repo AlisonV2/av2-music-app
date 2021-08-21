@@ -1,16 +1,16 @@
 <template>
   <div class="bg-white rounded border border-gray-200 relative flex flex-col">
     <div class="px-6 pt-6 pb-5 font-bold border-b border-gray-200">
-      <span class="card-title">Upload</span>
-      <i class="fas fa-upload float-right text-green-400 text-2xl"></i>
+      <span class="card-title text-pink-500">Upload</span>
+      <i class="fas fa-upload float-right text-pink-500 text-2xl"></i>
     </div>
     <div class="p-6">
       <!-- Upload Dropbox -->
       <div
         class="w-full px-10 py-20 rounded text-center cursor-pointer border border-dashed
           border-gray-400 text-gray-400 transition duration-500 hover:text-white
-          hover:bg-green-400 hover:border-green-400 hover:border-solid"
-        :class="{ 'bg-green-400 border-green-400 border-solid': is_dragover }"
+          hover:bg-purple-500 hover:border-purple-500 hover:border-solid"
+        :class="{ 'bg-purple-500 border-purple-500 border-solid': is_dragover }"
         @drag.prevent.stop=""
         @dragstart.prevent.stop=""
         @dragend.prevent.stop="is_dragover = false"
@@ -20,7 +20,7 @@
         @drop.prevent.stop="upload($event)">
         <h5>Drop your files here</h5>
       </div>
-      <input type="file" multiple @change="upload($event)" />
+      <input type="file" multiple @change="upload($event)"/>
       <hr class="my-6" />
       <!-- Progess Bars -->
       <div class="mb-4" v-for="upload in uploads" :key="upload.name">
@@ -72,7 +72,7 @@ export default {
           task,
           current_progress: 0,
           name: file.name,
-          variant: 'bg-blue-400',
+          variant: 'bg-blue',
           icon: 'fas fa-spinner fa-spin',
           text_class: '',
         }) - 1;
@@ -101,7 +101,7 @@ export default {
 
           this.addSong(songSnapshot);
 
-          this.uploads[uploadIndex].variant = 'bg-green-400';
+          this.uploads[uploadIndex].variant = 'bg-green-300';
           this.uploads[uploadIndex].icon = 'fas fa-check';
           this.uploads[uploadIndex].text_class = 'text-green-400';
         });
