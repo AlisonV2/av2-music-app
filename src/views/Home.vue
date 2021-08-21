@@ -1,20 +1,18 @@
 <template>
-  <main>
+  <main class="min-h-screen">
     <section class="mb-8 py-20 text-center relative">
       <div
         class="absolute inset-0 w-full h-full"
         id="home-header"
       ></div>
-      <div class="container mx-auto">
-        <div class="text-white main-header-content">
+      <div class="container mx-auto px-5">
           <div class="text-white main-header-content">
-            <h1 class="font-bold text-5xl mb-5">Your Very Own Music App</h1>
-          </div>
+            <h1 class="font-bold mb-5">Your Very Own Music App</h1>
         </div>
       </div>
     </section>
     <!-- Main Content -->
-    <section class="container mx-auto">
+    <section class="container mx-auto p-5 pb-20">
       <div
         class="bg-white opacity-90 rounded border border-gray-200 relative flex flex-col"
       >
