@@ -6,8 +6,11 @@ import VeeValidatePlugin from './includes/validation';
 import { auth } from './includes/firebase';
 import './assets/tailwind.css';
 import './assets/main.css';
-import './registerServiceWorker'
+import './registerServiceWorker';
+import ProgessBar from './includes/progress-bar';
+import 'nprogress/nprogress.css';
 
+ProgessBar(router);
 let app;
 
 auth.onAuthStateChanged(() => {
