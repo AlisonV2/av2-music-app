@@ -146,5 +146,10 @@ main {
   flex: 1;
   overflow-x: auto;
   height: 80vh;
-  padding-bottom: 5vh;
+  margin-top: 7rem;
+}
+
+nav {
+  background-color: black;
+  height: 6rem;
 }
