@@ -23,10 +23,6 @@ const routes = [
       requiresAuth: true,
     },
     component: Manage,
-    beforeEnter: (to, from, next) => {
-      console.log('Manage Route Guard');
-      next();
-    },
   },
   {
     path: '/manage',
