@@ -1,6 +1,31 @@
-# av2-music-app
+# Music App - Vue.js & Firebase
 
-## Project setup
+Music Player with a user interface.
+The user can add, edit or remove songs once he registered.
+## Features
+
+- Music player
+- Infinite Scroll
+- Drag & Drop Upload with progress bars
+- CRUD actions
+- PWA
+- Vercel CI/CD Pipeline
+- Unit tests, Snapshot tests && End-to-End test
+## Tech
+
+- Vuex
+- Vue Router with Route Guards
+- Firebase SDK: Authentication, Firestore, Storage
+- i18n
+- Composition API
+- Vee-validate
+- Howler.js
+- Tailwind CSS
+- PWA
+- WorkBox
+- Jest
+- Vercel CLI
+### Project setup
 ```
 yarn install
 ```
@@ -25,5 +50,7 @@ yarn test:unit
 yarn test:e2e
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### Lints and fixes files
+```
+yarn lint
+```
