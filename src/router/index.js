@@ -46,7 +46,7 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  linkExactActiveClass: 'text-yellow-500',
+  linkExactActiveClass: 'text-pink-500',
 });
 
 router.beforeEach((to, from, next) => {
@@ -56,7 +56,7 @@ router.beforeEach((to, from, next) => {
     return;
   }
 
-  if (store.state.userLoggedIn) {
+  if (store.state.auth.userLoggedIn) {
     next();
   } else {
     next({ name: 'home' });

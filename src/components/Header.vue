@@ -9,28 +9,28 @@
         <img height="70" width="70" src="../assets/img/logo.svg" />
       </router-link>
 
-      <div class="flex flex-grow items-center">
+      <div class="flex flex-grow justify-end">
         <!-- Primary Navigation -->
         <ul class="flex flex-row mt-1">
           <!-- Navigation Links -->
           <li>
-            <router-link class="px-2 text-white" :to="{ name: 'about' }">
+            <router-link class="px-8 text-white nav-item" :to="{ name: 'about' }">
               About
             </router-link>
           </li>
           <li v-if="!userLoggedIn">
-            <a class="px-2 text-white" href="#" @click.prevent="toggleAuthModal">
+            <a class="px-8 text-white nav-item" href="#" @click.prevent="toggleAuthModal">
               Login / Register
             </a>
           </li>
           <template v-else>
             <li>
-              <router-link class="px-2 text-white" :to="{ name: 'manage' }">
+              <router-link class="px-8 text-white nav-item" :to="{ name: 'manage' }">
                 Manage
               </router-link>
             </li>
             <li>
-              <a class="px-2 text-white" href="#"
+              <a class="px-8 text-white nav-item" href="#"
                 @click.prevent="signout">Logout</a>
             </li>
           </template>
@@ -46,7 +46,9 @@ import { mapMutations, mapState } from 'vuex';
 export default {
   name: 'Header',
   computed: {
-    ...mapState(['userLoggedIn']),
+    ...mapState({
+      userLoggedIn: (state) => state.auth.userLoggedIn,
+    }),
   },
   methods: {
     ...mapMutations(['toggleAuthModal']),

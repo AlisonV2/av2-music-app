@@ -1,4 +1,8 @@
 {
+  "name": "AlisonV2 - Music App",
+  "short_name": "AlisonV2",
+  "description": "Music App made with Vue3 and Firebase, created by Alison Vandromme",
+  "start_url": "/",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -72,5 +76,8 @@
       "sizes": "150x150",
       "type": "image/png"
     }
-  ]
+  ],
+  "theme_color": "#EC4899",
+  "background_color": "#1D1D1D",
+  "display": "standalone"
 }

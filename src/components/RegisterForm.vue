@@ -100,7 +100,7 @@ export default {
       },
       reg_in_submission: false,
       reg_show_alert: false,
-      reg_alert_variant: 'bg-blue-500',
+      reg_alert_variant: 'bg-blue',
       reg_alert_msg: 'Please wait! Your account is being created.',
     };
   },
@@ -108,7 +108,7 @@ export default {
     async register(values) {
       this.reg_show_alert = true;
       this.reg_in_submission = true;
-      this.reg_alert_variant = 'bg-blue-500';
+      this.reg_alert_variant = 'bg-blue';
       this.reg_alert_msg = 'Please wait! Your account is being created.';
 
       try {
@@ -120,7 +120,7 @@ export default {
         return;
       }
 
-      this.reg_alert_variant = 'bg-green-500';
+      this.reg_alert_variant = 'bg-green-300';
       this.reg_alert_msg = 'Success! Your account has been created.';
       window.location.reload();
     },

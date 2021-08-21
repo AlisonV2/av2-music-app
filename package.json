@@ -1,7 +1,8 @@
 {
   "name": "av2-music-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
+  "author": "Alison Vandromme",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
@@ -16,6 +17,7 @@
     "firebase": "^8.10.0",
     "howler": "^2.2.3",
     "postcss": "^7",
+    "register-service-worker": "^1.7.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2",
     "vee-validate": "^4.1.18",
     "vue": "^3.0.0",
@@ -25,6 +27,7 @@
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
     "@vue/cli-plugin-e2e-cypress": "~4.5.0",
+    "@vue/cli-plugin-pwa": "^4.5.13",
     "@vue/cli-plugin-router": "~4.5.0",
     "@vue/cli-plugin-unit-jest": "~4.5.0",
     "@vue/cli-plugin-vuex": "~4.5.0",

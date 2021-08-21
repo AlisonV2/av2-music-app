@@ -1,36 +1,74 @@
+:root{
+  --pink: #EC4899;
+  --purple: #A855F7;
+  --blue: #67E8F9;
+  --green: #5EEAD4;
+}
+
 body {
     background-color: black;
     font-family: 'Lato', sans-serif;
+    font-size: 18px;
 }
 
-h1 {
+h1, 
+.card-title,
+a.nav-item {
     font-family: 'Happy Monkey', cursive;
 }
+
+.card-title {
+  font-size: 24px;
+}
+
 a {
   transition: all 0.15s ease;
 }
 
-#home-header {
-    background-image: url(./img/header.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-#music-header {
-    background-image: url(./img/song-header.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-/* text-yellow-500 */
 a:hover {
-  color: #EC4899;
+  color: var(--pink);
   text-decoration: none;
 }
 
-.text-orange {
-  color: #f59e0b !important;
-  fill: #f59e0b !important;
+a.nav-item {
+  font-size: 24px;
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+
+.bg-green {
+  background-color: var(--green);
+}
+
+.bg-pink {
+  background-color: var(--pink);
+}
+
+#home-header,
+#song-header,
+#manage-header,
+#about-header {
+    background-size: cover;
+    background-position: center;
+    z-index: -10;
+}
+
+#home-header {
+  background-image: url(./img/header.jpg);
+}
+
+#song-header {
+    background-image: url(./img/song-header.jpg);
+}
+
+#manage-header {
+  background-image: url(./img/manage-header.jpg);
+}
+
+#about-header {
+  background-image: url(./img/about-header.jpg);
 }
 
 .player-scrub,
@@ -46,26 +84,14 @@ a:hover {
   margin-top: -24px;
 }
 
-.card-header .fa.text-orange,
-.card .card-header .fas.text-orange {
-  color: #ff5e3a;
-  fill: #ff5e3a;
-}
-
-.introduction-bg {
-  animation: slide 50s linear infinite;
-  will-change: background-position;
-  z-index: -1;
-}
-
 #playlist li:first-child {
   padding-top: 25px;
 }
 
 .upload-dropbox.upload-dropbox-drag {
   color: #fff;
-  background-color: #20d862;
-  border-color: #20d862;
+  background-color: var(--purple);
+  border-color: var(--purple);
   border-style: solid;
 }
 

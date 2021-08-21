@@ -2,9 +2,9 @@
   <main>
     <!-- Music Header -->
     <section class="w-full mb-8 py-14 text-center text-white relative">
-      <div class="absolute inset-0 w-full h-full box-border bg-contain music-bg"
-        id="music-header">
-      </div>
+    <div
+      class="absolute inset-0 w-full h-full" id="song-header">
+    </div>
       <div class="container mx-auto flex items-center">
         <!-- Play/Pause Button -->
         <button type="button" class="z-50 h-24 w-24 text-3xl bg-white text-black rounded-full
@@ -23,7 +23,7 @@
       <div class="bg-white rounded border border-gray-200 relative flex flex-col">
         <div class="px-6 pt-6 pb-5 font-bold border-b border-gray-200">
           <!-- Comment Count -->
-          <span class="card-title">Comments ({{ song.comment_count }})</span>
+          <span class="card-title text-purple-500">Comments ({{ song.comment_count }})</span>
           <i class="fa fa-comments float-right text-purple-500 text-2xl"></i>
         </div>
         <div class="p-6">
@@ -83,14 +83,16 @@ export default {
       },
       comment_in_submission: false,
       comment_show_alert: false,
-      comment_alert_variant: 'bg-blue-500',
+      comment_alert_variant: 'bg-blue',
       comment_alert_message: 'Please wait! Your comment is being submitted',
       comments: [],
       sort: '1',
     };
   },
   computed: {
-    ...mapState(['userLoggedIn']),
+    ...mapState({
+      userLoggedIn: (state) => state.auth.userLoggedIn,
+    }),
     ...mapGetters(['playing']),
     sortedComments() {
       return this.comments.slice().sort((a, b) => {
@@ -122,7 +124,7 @@ export default {
     async addComment(values, { resetForm }) {
       this.comment_in_submission = true;
       this.comment_show_alert = true;
-      this.comment_alert_variant = 'bg-blue-500';
+      this.comment_alert_variant = 'bg-blue';
       this.comment_alert_message = 'Please wait! Your comment is being submitted';
 
       const comment = {
@@ -143,7 +145,7 @@ export default {
       this.getComments();
 
       this.comment_in_submission = false;
-      this.comment_alert_variant = 'bg-green-500';
+      this.comment_alert_variant = 'bg-green-300';
       this.comment_alert_message = 'Comment added!';
 
       resetForm();
