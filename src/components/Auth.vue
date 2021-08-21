@@ -11,8 +11,8 @@
       <!-- This element is to trick the browser into centering the modal contents. -->
       <span class="hidden sm:inline-block sm:align-middle sm:h-screen">&#8203;</span>
 
-      <div class="inline-block align-bottom bg-white rounded-lg text-left overflow-hidden
-        shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-lg sm:w-full">
+      <div class="inline-block align-bottom bg-white opacity-90 rounded-lg text-left overflow-hidden
+        shadow-xl transform transition-all md:my-8 md:align-middle max-w-lg w-full">
 
         <!-- Add margin if you want to see some of the overlay behind the modal-->
         <div class="py-4 text-left px-6">
