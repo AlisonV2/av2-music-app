@@ -15,7 +15,7 @@
       </div>
       <!-- Scrub -->
       <div class="float-left w-7 h-7 leading-3 ml-7 mt-2 player-scrub">
-        <div class="absolute left-0 right-0 text-lg text-center mx-auto player-song-info"
+        <div class="absolute left-0 right-0 text-lg text-center mx-auto player-song-info mobile-hidden"
           v-if="currentSong.modified_name">
           <span class="song-title">{{ currentSong.modified_name }}</span>
           <span class="song-artist">
