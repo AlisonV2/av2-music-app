@@ -54,7 +54,7 @@
       </div>
     </section>
     <!-- Comments -->
-    <ul class="container mx-auto px-5 mt-5">
+    <ul class="container mx-auto px-5 mt-5 pb-20">
       <li class="p-6 bg-gray-50 rounded border border-gray-200" v-for="comment in sortedComments"
         :key="comment.docID">
         <!-- Comment Author -->

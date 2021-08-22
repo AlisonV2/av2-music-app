@@ -92,6 +92,9 @@ a.nav-item {
   h2 {
     font-size: 24px;
   }
+  .mobile-hidden {
+    display: none;
+  }
 }
 .player-scrub,
 .player-song-info {
@@ -144,7 +147,8 @@ input[type="file"] {
 
 main {
   flex: 1;
-  overflow-x: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
   height: 80vh;
   margin-top: 7rem;
 }
