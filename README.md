@@ -1,8 +1,9 @@
 # Music App - Vue.js & Firebase
 
-Music Player with a user interface.
-The user can add, rename or remove songs once he registered.
-Only users can comment.
+Music App created for learning purposes.
+Issues to fix : 
+- Combine new Howl instance and toggleAudio into one, and make it available in the player and the main play button
+- Review Firebase rules to allow users to comment on every song (to fix the comment count prob)
 ## Features
 
 - Music player
