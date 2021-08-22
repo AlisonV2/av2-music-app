@@ -1,47 +1,10 @@
+/* Global color variables */
+
 :root{
   --pink: #EC4899;
   --purple: #A855F7;
   --blue: #67E8F9;
   --green: #5EEAD4;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-body {
-    background-color: black;
-    font-family: 'Lato', sans-serif;
-    font-size: 18px;
-}
-
-h1,
-h2, 
-.card-title,
-a.nav-item {
-    font-family: 'Happy Monkey', cursive;
-}
-
-h1, h2 {
-  font-size: 50px;
-}
-
-.card-title {
-  font-size: 24px;
-}
-
-a {
-  transition: all 0.15s ease;
-}
-
-a:hover {
-  color: var(--pink);
-  text-decoration: none;
-}
-
-a.nav-item {
-  font-size: 24px;
-  padding-right: 70px;
 }
 
 .bg-blue {
@@ -55,6 +18,64 @@ a.nav-item {
 .bg-pink {
   background-color: var(--pink);
 }
+
+/* Global layout & Typo */
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+main {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  height: 80vh;
+  margin-top: 7rem;
+}
+
+h1,
+h2, 
+a.nav-item,
+.card-title {
+  font-family: 'Happy Monkey', cursive;
+}
+
+h1, h2 {
+  font-size: 50px;
+}
+
+a {
+  transition: all 0.15s ease;
+}
+
+a:hover {
+  color: var(--pink);
+  text-decoration: none;
+}
+
+.card-title {
+  font-size: 24px;
+}
+
+/* Navbar */
+
+nav {
+  background-color: black;
+  height: 6rem;
+}
+
+a.nav-item {
+  font-size: 24px;
+  padding-right: 70px;
+}
+
+/* Headers images */
 
 #home-header,
 #song-header,
@@ -81,6 +102,8 @@ a.nav-item {
   background-image: url(./img/about-header.jpg);
 }
 
+/* Mobile only */
+
 @media screen and (max-width: 768px) {
   a.nav-item {
     font-size: 20px;
@@ -96,6 +119,9 @@ a.nav-item {
     display: none;
   }
 }
+
+/* Audio player */
+
 .player-scrub,
 .player-song-info {
   width: calc(100% - 250px);
@@ -105,9 +131,13 @@ a.nav-item {
   margin-top: -24px;
 }
 
+/* Playlist */
+
 #playlist li:first-child {
   padding-top: 25px;
 }
+
+/* Manage Page - Dropbox */
 
 .upload-dropbox.upload-dropbox-drag {
   color: #fff;
@@ -119,6 +149,8 @@ a.nav-item {
 input[type="file"] {
   margin-top: 20px;
 }
+
+/* Manage Page - Progress bars */
 
 .progress-bar {
   background-size: 1rem 1rem;
@@ -142,18 +174,4 @@ input[type="file"] {
   100% {
     background-position: 0 0;
   }
-}
-
-
-main {
-  flex: 1;
-  overflow-y: auto;
-  overflow-x: hidden;
-  height: 80vh;
-  margin-top: 7rem;
-}
-
-nav {
-  background-color: black;
-  height: 6rem;
 }
