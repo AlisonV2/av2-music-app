@@ -8,7 +8,7 @@
       <div class="container mx-auto flex items-center px-5">
         <!-- Play/Pause Button -->
         <button type="button" class="h-16 w-16 md:h-20 md:w-20 text-2xl md:text-3xl bg-white text-black rounded-full
-          focus:outline-none" @click.prevent="newSong(song)">
+          focus:outline-none" id="play-button" @click.prevent="newSong(song)">
           <i class="fa" :class="{ 'fa-play': !playing, 'fa-pause': playing }"></i>
         </button>
         <div class="z-50 text-left ml-8">
